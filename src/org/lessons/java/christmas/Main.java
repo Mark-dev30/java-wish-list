@@ -13,12 +13,14 @@ public class Main {
 //		while(boll) {
 //			System.out.println("Inserisci un desiderio o scrivi 'annulla' per fermare l'esecuzione");
 //			String wish = in.nextLine();
+//			in.close();
 //			if(wish.equals("annulla")) {
-//				boll = false;
 //				System.out.println("-------Lista dei desideri: -------");
 //				for(String val : myList) {
 //					System.out.println(val);
+//					
 //				}
+//				break;
 //			}
 //			else {
 //				myList.add(wish);
@@ -34,11 +36,12 @@ public class Main {
 			System.out.println("Se Vuoi continuare a inserire un desiderio scrivi 'si'?");
 			String request = in.nextLine();
 			if(!request.equals("si")) {
-				boll = false;
 				System.out.println("-------Lista dei desideri: -------");
 				for(String val : myList) {
 					System.out.println(val);
+					
 				}
+				break;
 			}
 		}
 		
